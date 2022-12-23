@@ -1,0 +1,195 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+img{
+    display:block;
+    width: 100%;
+}
+
+/* typography */
+h2{
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0.5em 0;
+}
+
+h4,
+#digit{
+    font-size:1.125rem;
+}
+p{
+    margin: 0.5em 0;
+}
+#digit{
+    /* margin-right: 1em; */
+    margin: 0 0.5em;
+}
+main h2{
+    font-weight: 400;
+    margin:0;
+}
+
+h2,
+h4,
+.item-quantity{
+    font-weight:300;
+}
+span{
+    margin: 0 0.25em;
+}
+
+/* ===================== */
+/* layout */
+.container{
+    width:90%;
+    max-width: 1000px;
+    margin:0 auto;
+    background-color:#FAF9F6;
+}
+nav{
+    padding: 1em;
+    /* box-shadow: 2px 2px 15px black; */
+}
+nav ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid gold; */
+}
+.item-image{
+    width:100%;
+    max-height: 450px;
+    object-fit: cover;
+    margin-bottom:0.5em ;
+}
+.container-item-info{
+    padding: 0 1.5em;
+}
+.item-title,
+.item-description{
+    margin: 0.5em 0;
+}
+.item-price{
+    margin-bottom: .5em;
+}
+.item-quantity{
+    margin-bottom: 0.5em;
+}
+.container-item-info,
+.container-button{
+    padding: 0 1.5em;
+}
+.container-button{
+    padding-bottom: 4em;
+}
+.btn{
+    background-color: transparent;
+    color:black;
+    /* letter-spacing: 0.08rem; */
+    font-size: 0.875rem;
+    font-weight: 300;
+    border-radius: 0.5em;
+    border:2px solid black;
+    margin-right:  .5em;
+    padding: 0.5em 1.125em;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    /* width: 20%; */
+}
+.btn:hover,
+.btn:focus{
+    background-color: black;
+    color:white;
+}
+.btn-cart{
+    margin-right:1.5em;
+}
+.navigation-arrows{
+    background-color: blue;
+    position: relative;
+}
+.fa-angle-right{
+    position: absolute;
+}
+.fa-angle-right{
+    top: -11em;
+    right: 2em;
+}
+.fa-angle-right:hover,
+.fa-angle-right:focus{
+    cursor: pointer;
+}
+.fa-angle-left:hover,
+.fa-angle-left:focus{
+    cursor: pointer;
+}
+.fa-angle-left{
+    position: absolute;
+}
+.fa-angle-left{
+    top: -11em;
+    left: 2em;
+}
+
+/* ===================== */
+/* media queries */
+@media (min-width:600px){
+    .container{
+        width:90%;
+    }
+    .container-item-info{
+        padding: 0 2em;
+    }
+    .container-button{
+        padding: 0 2em;
+    }
+    .container-button{
+    display: flex;
+    justify-content: space-between;
+    
+    padding-bottom: 2em;
+    align-items: baseline;
+}
+
+}
+@media (min-width:800px){
+    .btn{
+        padding: 0.5em 1.125em;
+        /* width: 10%; */
+    }
+    .container-button{
+        padding-right: 20em;
+    }
+}
+@media (max-width:400px) {
+    .btn{
+        padding: 0.5em 0.75em;
+        /* width: 15%; */
+    }
+}
+
+@media (min-width:550px) {
+    .fa-angle-left{
+        top: -16em;
+        left: 2em;
+    }
+    .fa-angle-right{
+        top: -16em;
+        right: 2em;
+    }
+    
+}
