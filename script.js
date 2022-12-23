@@ -32,9 +32,10 @@ allbtns.forEach(function(btn){
         itemPrice.textContent = dollarSign + amount;
     })
 })
+//icons 
 const images = [
 {img: "12.png"},
-{img:"10.png"}, 
+{img: "10.png"}, 
 {img: "11.png"}
 ];
 // array with images
